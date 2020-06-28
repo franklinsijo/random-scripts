@@ -2,7 +2,7 @@
 #
 # Provided with a list of Patterns, this script retrieves the list of Group Members belonging to various AD Groups
 # whose name matches with the given pattern. The Group members are then made part of the desired Mail Distribution List.
-# Usage: ./update-msexchange-dl-members.ps1 pattern1,pattern2,pattern3
+# Usage: ./update_msexchange_dl_members.ps1 pattern1,pattern2,pattern3
 #
 
 param([Parameter(Mandatory=$true)][String[]]$PATTERNS)
