@@ -36,4 +36,5 @@ if __name__ == '__main__':
         nlines = int(sys.argv[3])
     except IndexError or TypeError:
         nlines = 10
+    
     read_gzip(src_gzip, dest_csv, nlines)
