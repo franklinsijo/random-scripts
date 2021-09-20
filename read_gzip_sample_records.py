@@ -11,7 +11,7 @@ import os
 def read_gzip(src, dest, nl):
     try:
         with gzip.open(src, 'rb') as gz:
-            records = [next(gz) for x in xrange(nl)]
+            records = [next(gz) for x in range(nl)]
         with open(dest, 'w') as csv:
             csv.writelines(records)
     except StopIteration:
